@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
+</head>
+
+<body>
+
+    <div id="content">
+        <main>
+            <header>
+                <div class="logo">
+                    <a href="">
+                        <img src="/assets/icon/tik-tok.png" height="50px" alt="">
+                    </a>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="">Images</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </header>
+
+            <section class="gallery">
+                <h2 class="images__title">Images <p id="images-length"></p>
+                </h2>
+
+                <div id="images" class="images"></div>
+            </section>
+
+            <footer>
+                <strong>© 2024 TikTok. All Rights Reserved.</strong>
+            </footer>
+        </main>
+
+        <video style="display: none;" class="video" autoplay></video>
+        <div style="display: none;" id="screenshots"></div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
